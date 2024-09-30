@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(50, 49, 49);
+}
+.f-container{
+  padding: 1.3rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1400px;
+  width: 100%;
+  border: 2px solid rgb(168, 165, 165);
+  border-radius: 50px;
+  margin-top: 2rem;
+  backdrop-filter: blur(20px);
+  background: rgb(97, 231, 255);
+}
+.f-item{
+  font-size: 20px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
