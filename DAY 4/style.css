@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&family=Rubik:wght@400;500;700&display=swap");
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat",sans-serif;
+  font-size: 20px;
+  color: rgb(47, 46, 46);
+}
+.navbar-container{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+.logo img{
+  width: 200px;
+  height: auto;
+}
+.menu-bar {
+  width: 40%;
+}
+.menu-bar ul{
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+}
+.menu-bar ul li{
+  list-style-type: none;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.menu-bar ul li:hover{
+  color: rgb(74, 74, 74);
+  transform: scale(1.08);
+  /* border-bottom: 1px solid black; */
+}
+.log-sign {
+  display: flex;
+  gap: 1.2rem;
+}
+.log-sign button{
+  font-size: 20px;
+  border: 0px;
+  border-radius: 10px;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  padding: 12px;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  transition: transform 0.3s ease-in-out;
+}
+.log-sign button:hover{
+  transform: scale(1.06);
+  /* color: rgb(0, 0, 0); */
+  /* background-color: rgb(188, 188, 188); */
+}
+.lgn-container{
+  box-sizing: border-box;
+  padding: 2rem;
+  border: 1px solid;
+  width: 400px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name-lgn{
+  text-align: center;
+  font-size: 23px;
+  font-weight: 600;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.user-name input , .password input{
+  width: 250px;
+  height: 22px;
+  /* border-radius: 10px; */
+  font-family: "Montserrat",serif;
+  border: 0px;
+  border-bottom: 1px solid;
+}
+.user-name input:focus , .password input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid;
+}
+.content button{
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  cursor: pointer;
+  border-radius: 12px;
+  border: 1px solid;
+  margin-top: 1rem;
+  background-color: rgb(42, 42, 42);
+  color: white;
+  padding: 0.2rem 0;
+  transition: transform 0.3s ease-in-out;
+}
+.content button:hover{
+  transform: scale(1.06);
+}
+.main-content{
+  display: flex;
+}
+.about{
+  width: 50%;
+}
+.news{
+  width: 25%;
+}
+.about p{
+  font-size: 28px;
+  font-weight: 500;
+}
+.copyright{
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(153, 153, 153);
+}
+.footer{
+  height: 400px;
+}
+.copyright p{
+  font-size: 22px;
+}
