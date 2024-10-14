@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="text" placeholder="input the data">
+  <p id="res">KeyPressed</p>
+  <script>
+    const text = document.querySelector('#text');
+    const res = document.querySelector('#res');
+    let result = (event) => {
+      res.innerHTML = `Key Pressed: ${event.target.value}`;
+    }
+    text.addEventListener('keypress', result);
+    // keydown can also be used , it's also a event
+
+  </script>
+</body>
+</html>

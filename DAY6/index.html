@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat",sans-serif;
+  font-size: 30px;
+  color: rgb(47, 46, 46);
+}
+header{
+  font-size: 30px;
+  font-family: "Montserrat",sans-serif;
+}
+  </style>
+  <script src="script.js"></script>
+</head>
+<body>  
+  <!-- <header>FSD</header> -->
+  <button id="display_1">click</button>
+  <div class="p1"></div>
+  <div class="p1"></div>
+  <div class="p1"></div>
+  <p id="demo"></p>
+  <button id="nothing">click here</button>
+  <button id="btn">Click to try</button>
+  <div id="name"></div>
+
+  <!-- <a href="https://www.google.com" target="_blank">click here</a>
+  <button onclick="newElement()">Click to create a new div element</button> -->
+  <script>
+    const button = document.querySelector('#nothing');
+button.addEventListener('click', () => {
+  document.getElementById('demo').innerHTML = 'Hello World';
+});
+document.getElementById('btn').onmouseover = () => {
+  document.getElementById('btn').innerHTML = 'Try Again';
+  document.getElementById('name').innerHTML = 'FSD';
+  document.getElementById('name').style.fontSize = '30px';
+};
+document.getElementById('btn').onmouseleave = () => {
+  document.getElementById('btn').innerHTML = 'Click to try';
+  document.getElementById('name').innerHTML = '';
+};
+
+let display = () => {
+  let p1 = document.querySelectorAll('.p1');
+  // p1.innerHTML = 'Hello';
+  p1[0].textContent = "nothing";
+  p1[1].innerHTML = "Hello";
+  p1[0].style.color = 'Red';
+  const link = document.querySelector('a');
+  link.setAttribute('href','https://abes.ac.in');
+}
+document.querySelector('#display_1').addEventListener('click',display);
+
+  </script>
+</body>
+</html>
