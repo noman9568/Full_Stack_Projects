@@ -91,7 +91,8 @@
   </style>
   <script src="script.js"></script>
 </head>
-<body onload="display()">
+<body>  
+   <!-- onload="display()  -->
   <div class="log-in">
     <div class="lgn-container">
       <p class="name-lgn">LOG IN</p>
@@ -99,10 +100,12 @@
         <div class="user-name">
           <p>UserName</p>
           <input type="text" placeholder="Enter UserName..." class="userName" maxlength="8">
+          <div class="p2"></div>
         </div>
         <div class="password">
           <p>Password</p>
           <input type="password" placeholder="Enter Password..." maxlength="10" class="password-data">
+          <div class="p1"></div>
         </div>
         <button onclick="validate()">Submit</button>
       </div>
