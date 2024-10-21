@@ -29,7 +29,7 @@ sayhello=()=>{
 console.log('start');
 
 // setTimeout(sayhello,3000);
-console.log('end');
+
 
 //callback hell
 setTimeout(()=>{
@@ -41,6 +41,7 @@ setTimeout(()=>{
     },3000)
   },2000)
 },1000);
+console.log('end');
 
 //callback hell solution - promises and async/await , now async/await is used more because it's easy
 // promises states - pending , fulfilled and rejected
