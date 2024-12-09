@@ -1,10 +1,12 @@
+import React from 'react'
 
-
-functio DashBoard() {
-    return (
-        <>
-        </>
-    )
+const DashBoard = () => {
+  return (
+    <div>
+      
+    </div>
+  )
 }
 
-export default DashBoard;
+export default DashBoard
+

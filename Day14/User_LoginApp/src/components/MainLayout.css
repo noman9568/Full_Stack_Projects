@@ -1,0 +1,26 @@
+nav {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style-type: none;
+}
+li {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 120px;
+  transition: all 0.3s ease-in-out;
+}
+li:hover , a:hover {
+  cursor: pointer;
+  background-color: black;
+  transform: translateY(-5px);
+}
+li a{
+  text-decoration: none;
+  color: rgb(117, 96, 96);
+}
